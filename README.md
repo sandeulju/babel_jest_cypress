@@ -83,7 +83,7 @@
             "test:jest": "jest --watchAll --collect[=true] --logHeapUsage"
             }
     - test 폴더 하위에 (원하는 파일명).test.js 파일 생성
-      ```
+   
 
 **주의사항!!**
   ```javascript
@@ -124,7 +124,6 @@
             "start": "parcel",
             "build": "parcel build"
             },
-     ```
 
         
 - [ ] Cypress
