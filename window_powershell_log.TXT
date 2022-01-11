@@ -105,7 +105,7 @@ npm run nodemon
 일괄 작업을 끝내시겠습니까 (Y/N)?
 PS C:\Users\이진숙\Desktop\20220111> y
 y : 'y' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되
-지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다
+지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지  검증한 다음 다
 시 시도하십시오.
 위치 줄:1 문자:1
 + y
@@ -143,7 +143,7 @@ npm -g install babel node
 일괄 작업을 끝내시겠습니까 (Y/N)?
 PS C:\Users\이진숙\Desktop\20220111> y
 y : 'y' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되
-지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다
+지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지  검증한 다음 다
 시 시도하십시오.
 위치 줄:1 문자:1
 + y
@@ -171,3 +171,353 @@ PS C:\Users\이진숙\Desktop\20220111> npm run nodemon
 [nodemon] starting `node ./index.js`
 25
 [nodemon] clean exit - waiting for changes before restart
+일괄 작업을 끝내시겠습니까 (Y/N)?
+PS C:\Users\이진숙\Desktop\20220111> y
+y : 'y' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되
+지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지  검증한 다음 다
+시 시도하십시오.
+위치 줄:1 문자:1
++ y
++ ~
+    + CategoryInfo          : ObjectNotFound: (y:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\이진숙\Desktop\20220111> npm i eslint -D
+
+added 68 packages, removed 220 packages, and audited 191 packages in 21s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111> npx eslint --init
+√ How would you like to use ESLint? · problems
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · browser
+√ What format do you want your config file to be in? · JavaScript
+Successfully created .eslintrc.js file in C:\Users\이진숙\Desktop\20220111
+PS C:\Users\이진숙\Desktop\20220111> npm i -D eslint-config-prettier eslint-config-tui eslint-plugin-prettier
+>>
+
+added 6 packages, and audited 197 packages in 5s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111> npm i -D prettier
+>>
+
+up to date, audited 197 packages in 2s
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111> npm run lint
+
+> 20220111@1.0.0 lint
+> eslint ./index.js --fix
+
+
+C:\Users\이진숙\Desktop\20220111\index.js
+  5:1  warning  Unexpected console statement  no-console
+
+✖ 1 problem (0 errors, 1 warning)
+
+PS C:\Users\이진숙\Desktop\20220111> npm run lint
+
+> 20220111@1.0.0 lint
+> eslint ./index.js --fix
+
+
+C:\Users\이진숙\Desktop\20220111\index.js
+  7:1  warning  Unexpected console statement  no-console
+  8:1  warning  Unexpected console statement  no-console
+
+✖ 2 problems (0 errors, 2 warnings)
+
+PS C:\Users\이진숙\Desktop\20220111> npm run lint
+
+> 20220111@1.0.0 lint
+> eslint ./index.js --fix
+
+
+C:\Users\이진숙\Desktop\20220111\index.js
+  7:1  warning  Unexpected console statement  no-console
+  8:1  warning  Unexpected console statement  no-console
+
+✖ 2 problems (0 errors, 2 warnings)
+
+PS C:\Users\이진숙\Desktop\20220111> npm i -D jest babel-jest
+>>
+
+added 286 packages, and audited 483 packages in 37s
+
+43 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+npm ERR! Missing script: "test:jest"
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\이진숙\AppData\Local\npm-cache\_logs\2022-01-11T09_32_58_086Z-debug-0.log
+PS C:\Users\이진숙\Desktop\20220111> npm run sum:jest
+npm ERR! Missing script: "sum:jest"
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\이진숙\AppData\Local\npm-cache\_logs\2022-01-11T09_33_52_022Z-debug-0.log
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+
+> 20220111@1.0.0 test:jest
+> jest
+
+ FAIL  ./sum.test.js
+  ● Test suite failed to run
+
+    Cannot find module '@babel/preset-env'
+    Require stack:
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@babel\core\lib\config\files\plugins.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@babel\core\lib\config\files\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@babel\core\lib\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-snapshot\build\InlineSnapshots.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-snapshot\build\State.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-snapshot\build\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-runtime\build\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@jest\core\build\cli\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@jest\core\build\jest.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-cli\build\cli\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-cli\bin\jest.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest\bin\jest.js
+
+      at resolveStandardizedName (node_modules/@babel/core/lib/config/files/plugins.js:111:7)
+      at resolvePreset (node_modules/@babel/core/lib/config/files/plugins.js:59:10)
+      at loadPreset (node_modules/@babel/core/lib/config/files/plugins.js:78:20)
+          at loadPreset.next (<anonymous>)
+      at createDescriptor (node_modules/@babel/core/lib/config/config-descriptors.js:187:16)
+          at createDescriptor.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at node_modules/gensync/index.js:31:34
+
+---|---------|----------|---------|---------|-------------------... | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+---|---------|----------|---------|---------|-------------------... |       0 |        0 |       0 |       0 |
+---|---------|----------|---------|---------|-------------------Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        2.48 s
+Ran all test suites.
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+
+> 20220111@1.0.0 test:jest
+> jest
+
+ FAIL  test/sum.test.js
+  ● Test suite failed to run
+
+    Cannot find module '@babel/preset-env'
+    Require stack:
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@babel\core\lib\config\files\plugins.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@babel\core\lib\config\files\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@babel\core\lib\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-snapshot\build\InlineSnapshots.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-snapshot\build\State.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-snapshot\build\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-runtime\build\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@jest\core\build\cli\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\@jest\core\build\jest.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-cli\build\cli\index.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest-cli\bin\jest.js
+    - C:\Users\이진숙\Desktop\20220111\node_modules\jest\bin\jest.js
+
+      at resolveStandardizedName (node_modules/@babel/core/lib/config/files/plugins.js:111:7)
+      at resolvePreset (node_modules/@babel/core/lib/config/files/plugins.js:59:10)
+      at loadPreset (node_modules/@babel/core/lib/config/files/plugins.js:78:20)
+          at loadPreset.next (<anonymous>)
+      at createDescriptor (node_modules/@babel/core/lib/config/config-descriptors.js:187:16)
+          at createDescriptor.next (<anonymous>)
+      at evaluateSync (node_modules/gensync/index.js:251:28)
+      at node_modules/gensync/index.js:31:34
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.774 s
+Ran all test suites.
+PS C:\Users\이진숙\Desktop\20220111> npm i -D @babel/core @babel/preset-env @babel/cli @babel/node
+
+added 150 packages, and audited 633 packages in 28s
+
+72 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+
+> 20220111@1.0.0 test:jest
+> jest
+
+ PASS  test/sum.test.js
+  √ 5 + 10 = 15 (2 ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.335 s
+Ran all test suites.
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+npm ERR! code EJSONPARSE
+npm ERR! path C:\Users\이진숙\Desktop\20220111/package.json
+npm ERR! JSON.parse Unexpected token
+npm ERR! JSON.parse  in JSON at position 321 while parsing '{
+npm ERR! JSON.parse   "name": "20220111",
+npm ERR! JSON.parse   "version": "1.'
+npm ERR! JSON.parse Failed to parse JSON data.
+npm ERR! JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\이진숙\AppData\Local\npm-cache\_logs\2022-01-11T09_38_48_929Z-debug-0.log
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+npm ERR! code EJSONPARSE
+npm ERR! path C:\Users\이진숙\Desktop\20220111/package.json
+npm ERR! JSON.parse Unexpected token
+npm ERR! JSON.parse  in JSON at position 322 while parsing '{
+npm ERR! JSON.parse   "name": "20220111",
+npm ERR! JSON.parse   "version": "1.'
+npm ERR! JSON.parse Failed to parse JSON data.
+npm ERR! JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\이진숙\AppData\Local\npm-cache\_logs\2022-01-11T09_39_25_398Z-debug-0.log
+PS C:\Users\이진숙\Desktop\20220111> npm run test:jest
+
+> 20220111@1.0.0 test:jest
+> jest --watchAll --collect[=true] --logHeapUsage
+ PASS  test/sum.test.js (51 MB heap size)
+  √ 5 + 10 = 15 (3 ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        3.326 s
+Ran all test suites.
+
+Watch Usage
+ › Press f to run only failed tests.
+ › Press o to only run tests related to changed files.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press q to quit watch mode.
+ › Press Enter to trigger a test run.
+
+PS C:\Users\이진숙\Desktop\20220111> npm install --save-dev parcel
+>>
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 496 packages, and audited 1129 packages in 2m
+
+169 packages are looking for funding
+  run `npm fund` for details
+
+55 vulnerabilities (42 low, 13 moderate)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+PS C:\Users\이진숙\Desktop\20220111> npx parcel src/index.html
+>>
+Error: ���� �̸�, ���͸� �̸� �Ǵ� ���� ���̺� ������ �߸��Ǿ����ϴ�.
+
+    at Object.open (C:\Users\이진숙\Desktop\20220111\node_modules\lmdb\dist\index.cjs:1850:3)
+    at new LMDBCache (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\cache\lib\LMDBCache.js:69:34)
+    at resolveOptions (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\resolveOptions.js:112:168)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Parcel._init (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\Parcel.js:217:27)
+    at async Parcel.watch (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\Parcel.js:314:7)
+    at async run (C:\Users\이진숙\Desktop\20220111\node_modules\parcel\lib\cli.js:349:9) {
+  code: 123
+}
+PS C:\Users\이진숙\Desktop\20220111> npm parcel src/index.html
+Unknown command: "parcel"
+
+To see a list of supported npm commands, run:
+  npm help
+PS C:\Users\이진숙\Desktop\20220111> npx parcel src/index.html
+Error: ���� �̸�, ���͸� �̸� �Ǵ� ���� ���̺� ������ �߸��Ǿ����ϴ�.
+
+    at Object.open (C:\Users\이진숙\Desktop\20220111\node_modules\lmdb\dist\index.cjs:1850:3)
+    at new LMDBCache (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\cache\lib\LMDBCache.js:69:34)
+    at resolveOptions (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\resolveOptions.js:112:168)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Parcel._init (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\Parcel.js:217:27)
+    at async Parcel.watch (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\Parcel.js:314:7)
+    at async run (C:\Users\이진숙\Desktop\20220111\node_modules\parcel\lib\cli.js:349:9) {
+  code: 123
+}
+PS C:\Users\이진숙\Desktop\20220111> npm -g i -D parcel
+>>
+npm WARN deprecated request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 668 packages, and audited 669 packages in 1m
+
+141 packages are looking for funding
+  run `npm fund` for details
+
+54 vulnerabilities (41 low, 13 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+PS C:\Users\이진숙\Desktop\20220111> npx parcel src/index.html
+>>
+Error: ���� �̸�, ���͸� �̸� �Ǵ� ���� ���̺� ������ �߸��Ǿ����ϴ�.
+
+    at Object.open (C:\Users\이진숙\Desktop\20220111\node_modules\lmdb\dist\index.cjs:1850:3)
+    at new LMDBCache (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\cache\lib\LMDBCache.js:69:34)
+    at resolveOptions (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\resolveOptions.js:112:168)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Parcel._init (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\Parcel.js:217:27)
+    at async Parcel.watch (C:\Users\이진숙\Desktop\20220111\node_modules\@parcel\core\lib\Parcel.js:314:7)
+    at async run (C:\Users\이진숙\Desktop\20220111\node_modules\parcel\lib\cli.js:349:9) {
+  code: 123
+}
+PS C:\Users\이진숙\Desktop\20220111>
