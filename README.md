@@ -39,7 +39,7 @@
          
      - npm (run) start
 
-- [x] Eslint
+- [x] Eslint & Prettier
 
     - npm install eslint --save-dev
     - npx eslint --init
@@ -65,8 +65,63 @@
         "prettier/prettier": "error",
     },
 };
-```
       
-- [ ] Prettier
-- [ ] Jest
+- [x] Jest
+
+    - npm install --save-dev jest babel-jest
+    - jest.config.json 파일 생성
+    - ```json
+        {
+            "clearMocks": true,
+            "collectCoverage": true,
+            "verbose": true,
+            "testEnvironment": "jsdom"
+        }
+    - script 수정
+    - ```json
+        "scripts": {
+            "test:jest": "jest --watchAll --collect[=true] --logHeapUsage"
+            }
+    - test 폴더 하위에 (원하는 파일명).test.js 파일 생성
+
+**주의사항!!**
+  ```javascript
+      // export랑 함수 || 객체가 한계일 경우
+      const sum = (a + b) => {
+          return a + b;
+      };
+      
+      export default sum;
+      // 테스트 파일
+      import sum from "../src/index.js";
+      //테스트 컨텍스트
+      
+      ```javascript
+      // export랑 함수 || 객체가 다수일 경우
+      export const sum = (a, b) => {
+          return a + b;
+        };
+        
+      export const minus = (a, b) => {
+          return a - b;
+        };
+        //테스트 파일
+        
+      import { sum, minus } form "../src/index.js";
+      //테스트 컨텍스트
+      
+  
+  
+- [x] parcel
+ 
+    - npm install --save-dev parcel
+    - npx parcel src/index.html (만약 src 폴더 하위에 index.html 파일이 있다면)
+    - ```json
+        "scripts": {
+            "start": "parcel",
+            "build": "parcel build"
+            },
+            ```
+
+        
 - [ ] Cypress
