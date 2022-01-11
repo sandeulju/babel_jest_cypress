@@ -64,7 +64,7 @@
     rules: {
         "prettier/prettier": "error",
     },
-};
+    };
       
 - [x] Jest
 
@@ -124,6 +124,4 @@
             "start": "parcel",
             "build": "parcel build"
             },
-
-        
 - [ ] Cypress
