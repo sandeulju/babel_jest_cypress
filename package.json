@@ -1,0 +1,26 @@
+{
+  "name": "20220111",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "nodemon":"nodemon --exec babel-node ./index.js",
+  "start:babel": "nodemon --exec babel-node ./index.js",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeulju/babel_jest_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeulju/babel_jest_cypress/issues"
+  },
+  "homepage": "https://github.com/sandeulju/babel_jest_cypress#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

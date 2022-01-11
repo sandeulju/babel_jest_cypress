@@ -1,0 +1,173 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+새로운 크로스 플랫폼 PowerShell 사용 https://aka.ms/pscore6
+
+PS C:\WINDOWS\system32> cd C:\Users\이진숙\Desktop\20220111
+PS C:\Users\이진숙\Desktop\20220111> npm init -y
+Wrote to C:\Users\이진숙\Desktop\20220111\package.json:
+
+{
+  "name": "20220111",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeulju/babel_jest_cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeulju/babel_jest_cypress/issues"
+  },
+  "homepage": "https://github.com/sandeulju/babel_jest_cypress#readme"
+}
+
+
+PS C:\Users\이진숙\Desktop\20220111> npm install nodemon -D
+
+added 116 packages, and audited 117 packages in 7s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111> npm run nodemon
+npm ERR! Missing script: "nodemon"
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\이진숙\AppData\Local\npm-cache\_logs\2022-01-11T08_03_45_124Z-debug-0.log
+PS C:\Users\이진숙\Desktop\20220111> npm start
+
+> 20220111@1.0.0 start
+> nodemon ./index.js
+
+[nodemon] 2.0.15
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node ./index.js`
+preset
+[nodemon] clean exit - waiting for changes before restart
+일괄 작업을 끝내시겠습니까 (Y/N)? y
+PS C:\Users\이진숙\Desktop\20220111>  npm nodemon
+Unknown command: "nodemon"
+
+Did you mean this?
+    npm run nodemon # run the "nodemon" package script
+
+To see a list of supported npm commands, run:
+  npm help
+PS C:\Users\이진숙\Desktop\20220111> npm run nodemon
+
+> 20220111@1.0.0 nodemon
+> nodemon ./index.js
+
+[nodemon] 2.0.15
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node ./index.js`
+preset
+[nodemon] clean exit - waiting for changes before restart
+일괄 작업을 끝내시겠습니까 (Y/N)? y
+PS C:\Users\이진숙\Desktop\20220111> npm install -D @babel/core @babel/cli @babel/preset-env @babel/node
+
+added 226 packages, and audited 343 packages in 48s
+
+52 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+PS C:\Users\이진숙\Desktop\20220111>
+PS C:\Users\이진숙\Desktop\20220111> npm run nodemon
+
+> 20220111@1.0.0 nodemon
+> nodemon ./index.js
+
+[nodemon] 2.0.15
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node ./index.js`
+
+[nodemon] clean exit - waiting for changes before restart
+npm run nodemon
+
+일괄 작업을 끝내시겠습니까 (Y/N)?
+PS C:\Users\이진숙\Desktop\20220111> y
+y : 'y' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되
+지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다
+시 시도하십시오.
+위치 줄:1 문자:1
++ y
++ ~
+    + CategoryInfo          : ObjectNotFound: (y:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\이진숙\Desktop\20220111> npm run start
+npm ERR! Missing script: "start"
+npm ERR!
+npm ERR! Did you mean one of these?
+npm ERR!     npm star # Mark your favorite packages
+npm ERR!     npm stars # View packages marked as favorites
+npm ERR!
+npm ERR! To see a list of scripts, run:
+npm ERR!   npm run
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\이진숙\AppData\Local\npm-cache\_logs\2022-01-11T08_27_41_485Z-debug-0.log
+PS C:\Users\이진숙\Desktop\20220111> ^C
+PS C:\Users\이진숙\Desktop\20220111> ^C
+PS C:\Users\이진숙\Desktop\20220111> npm run nodemon
+
+> 20220111@1.0.0 nodemon
+> nodemon ./index.js
+
+[nodemon] 2.0.15
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node ./index.js`
+
+[nodemon] clean exit - waiting for changes before restart
+npm -g install babel node
+일괄 작업을 끝내시겠습니까 (Y/N)?
+PS C:\Users\이진숙\Desktop\20220111> y
+y : 'y' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되
+지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다
+시 시도하십시오.
+위치 줄:1 문자:1
++ y
++ ~
+    + CategoryInfo          : ObjectNotFound: (y:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\이진숙\Desktop\20220111> npm run nodemon
+
+> 20220111@1.0.0 nodemon
+> nodemon ./index.js
+
+[nodemon] 2.0.15
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node ./index.js`
+
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./index.js`
+25
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node ./index.js`
+25
+[nodemon] clean exit - waiting for changes before restart
