@@ -26,16 +26,17 @@
    - npm i -D @babel/core @babel/preset-env @babel/cli @babel/node
       - 만약 오류 발생시 npm -g i -D @babel/core @babel/preset-env @babel/cli @babel/node
    - 루트 디렉토리에 **babel.config.json** 파일 생성
-      -```json
+      - ```json
           {
              "presets": ["@babel/preset-env"]
           }
           ```
-     -```json
+     - ```json
          "scripts":{
               "start": "nodemon --exec babel -node ./index.js",
          },
          ```
+         
      - npm (run) start
 
 - [ ] Eslint
