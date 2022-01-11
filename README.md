@@ -95,6 +95,7 @@
       // 테스트 파일
       import sum from "../src/index.js";
       //테스트 컨텍스트
+      ```
       
       ```javascript
       // export랑 함수 || 객체가 다수일 경우
@@ -109,6 +110,7 @@
         
       import { sum, minus } form "../src/index.js";
       //테스트 컨텍스트
+      ```
       
   
   
