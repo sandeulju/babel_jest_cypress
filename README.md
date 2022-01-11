@@ -50,7 +50,7 @@
         "lint": "eslint ./index.js --fix"
       ```
     - eslintc.js
-    -  ```javascript
+-  ```javascript
     module.exports = {
     parserOptions: {
         sourceType: "module"
