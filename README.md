@@ -83,6 +83,7 @@
             "test:jest": "jest --watchAll --collect[=true] --logHeapUsage"
             }
     - test 폴더 하위에 (원하는 파일명).test.js 파일 생성
+      ```
 
 **주의사항!!**
   ```javascript
@@ -95,9 +96,9 @@
       // 테스트 파일
       import sum from "../src/index.js";
       //테스트 컨텍스트
-      ```
+  ```
       
-      ```javascript
+  ```javascript
       // export랑 함수 || 객체가 다수일 경우
       export const sum = (a, b) => {
           return a + b;
@@ -110,7 +111,7 @@
         
       import { sum, minus } form "../src/index.js";
       //테스트 컨텍스트
-      ```
+  ```
       
   
   
@@ -123,7 +124,7 @@
             "start": "parcel",
             "build": "parcel build"
             },
-            ```
+     ```
 
         
 - [ ] Cypress
